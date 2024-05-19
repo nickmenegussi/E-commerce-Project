@@ -1,0 +1,116 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.card_divpai{
+    margin-top: 5vh;
+}
+
+p {
+    font-size: larger;
+    color: black;
+    max-width: 30rem;
+}
+h3 {
+    color: black!important;
+}
+.linha{
+    width: 7.4vw;
+    border-bottom: 1px solid white;
+}
+
+.div_pai {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+}
+.img-div_pai{
+    width: 20vw;
+    border-radius: 15px!important;
+
+}
+.content-text{
+    margin-top: 25vh;
+}
+
+.card-img {
+    border-radius: 2vw!important;
+    padding: 20px;
+    height: 25vh!important;
+}
+
+
+.card-body-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 3vh;
+}
+
+.card-text{
+    max-width: 15vw;
+}
+
+.stars {
+    display: flex;
+    width: 10vw;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vh;
+    border: 1px solid;
+    border-radius: 5vw;
+    width: 3vw;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.feedback-card {
+    align-items: center;
+    height: 50vh!important;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-img {
+    margin-top: 2vh;
+    height: 10vh; 
+    border-radius: 30%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem mantenha suas proporções */
+    object-position: center; /* Alinha a imagem ao centro */
+
+}
+.aspas {
+    font-size: 2vw;
+    color: green;
+}
+
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
