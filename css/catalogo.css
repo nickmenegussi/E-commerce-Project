@@ -1,0 +1,56 @@
+.navbar-brand {
+    /* margin-left: 5vh; */
+    font-size: 25px!important;
+    padding: 10px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+.navbar-text {
+    font-weight: 500;
+    color: green!important;
+    font-size:20px !important;
+}
+header {
+    height: 6vh;
+}
+
+.card-produto {
+    border-radius: 15px !important;
+    height: 60vh;
+    width: 35vw!important;
+}
+.produto-site {
+    margin-top: 20vh;
+}
+.linha{
+    border: 1px solid black;
+    width: 2vw;
+}
+.menu-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    height: 10vh;
+    width: 20vw;
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+
+}
+.menu-botoes .btn {
+    height: 10vh;
+    
+}
+.div-paioftheProduct {
+    display: flex;
+    align-items: center;
+}
+.text-food{
+    font-size: 70px;
+}
+h6,.text-content {
+    font-size: small;
+    color: white!important;
+}

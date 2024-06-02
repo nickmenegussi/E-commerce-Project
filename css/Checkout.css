@@ -1,0 +1,134 @@
+header {
+    height: 6vh;
+}
+.titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.linhaofcontentes{
+    border: 1px solid whitesmoke;
+    width: 80vw!important;
+    padding: 15px;
+    align-items: center;
+    background: linear-gradient(to right, #fff, #fff); /* Gradiente linear branco */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+
+}
+
+.descritionsofcontent{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 55px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.steps {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+.step-1 {    
+    border: 1px solid;
+    width: 2vw;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.steps a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 50px 10px 0px;
+    position: relative;
+    font: 25pt;
+  }
+  
+  .steps:hover a::after { /* Alteração aqui */
+    content: " ";
+    border: 1px solid black;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width 0.5s ease-in-out; /* Alteração aqui */
+}
+  
+  .steps a:hover::after { /* Alteração aqui */
+    width: 100%;
+}
+
+.container-content {
+    padding: 20px;
+    margin-left: 100px;
+    
+}
+
+.img-contents {
+    width: 60px;
+    height: 60px;
+}
+.borda {
+    border: 1px solid black;
+    height: 1px;
+    width: 80px!important;
+    border-radius: 10px;
+}
+
+.button-diminuir {
+    border: none;
+    background-color: white;
+}
+.button-aumentar {
+    border: none;
+    background-color: white;
+}
+.linhaofproducts {
+    display: flex;
+    width: 80vw!important;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+
+    border: 1px solid whitesmoke;
+    background: linear-gradient(to right, #fff, #fff); /* Gradiente linear branco */
+    transition: all 0.3s ease;
+}
+/* .btn {
+    width: 150px;
+    margin-left: 13%;
+    padding: 15px;
+} */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto 0;
+
+}
+.total-carrinho{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.segundalinha {
+    border: 1px solid black;
+    width: 335px!important;
+}
+.terceiralinha{
+    border: 1px solid black;
+    width: 290px!important;
+}
+.pagamento-compra {
+    display: flex;
+    flex-direction: column;
+}

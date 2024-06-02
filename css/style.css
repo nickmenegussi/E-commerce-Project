@@ -60,14 +60,13 @@ h3 {
 
 .stars {
     display: flex;
-    width: 10vw;
+    margin-left: 3vh;
     gap: 5px;
     align-items: center;
     justify-content: center;
-    margin-left: 3vh;
     border: 1px solid;
     border-radius: 5vw;
-    width: 3vw;
+    width: 5vw;
 }
 
 .fa-star {
@@ -79,7 +78,6 @@ h3 {
     justify-content: space-evenly;
     flex-direction: column;
     height: 100vh;
-
 }
 
 .feedback-card {
@@ -95,8 +93,9 @@ h3 {
 }
 
 .profile-img {
-    margin-top: 2vh;
-    height: 10vh; 
+    padding: 5px;
+    height: 15vh;
+    width: 8vw;
     border-radius: 30%; /* Torna a imagem circular */
     object-fit: cover; /* Garante que a imagem mantenha suas proporções */
     object-position: center; /* Alinha a imagem ao centro */
@@ -114,3 +113,18 @@ h3 {
     align-items: center;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  transform: translateY(-5%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para as bolinhas */
+  border-radius: 35%; /* Formato de bolinha */
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  color: black; /* Cor do ícone dentro da bolinha */
+}
