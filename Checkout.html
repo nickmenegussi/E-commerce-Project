@@ -27,7 +27,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3">
               <li class="nav-item text-start">
-                <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="#">Home</a>
+                <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item text-start">
                 <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
@@ -45,7 +45,7 @@
                 <path
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
               </svg>
-              <span class="translate-middle badge rounded-pill bg-danger">1</span>
+              <span class="translate-middle badge rounded-pill bg-danger msg-add">0</span>
             </div>
           </div>
         </div>
@@ -80,6 +80,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="container-content">
         <div class="linhaofcontentes mx-auto">
@@ -99,78 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="container-content">
-        <div class="row"> <!-- Adicionando a classe 'g-3' para espaçamento entre as colunas -->
-          <div class="linhaofproducts mx-auto p-2 mt-3">
-            <div class="col descritionsofcontent">
-              <img src="assets/gran-empresario-e1558299974907.png" class="img-contents mt-2 mb-2" alt="img-content1">
-              <h6>Name of product</h6>
-            </div>
-            <div class="col">
-              <div class="container borda gap-2 text-center">
-                <button class="button-diminuir">-</button>
-                <div class="valor-quantidade">1</div>
-                <button class="button-aumentar">+</button>
-              </div>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center ms-1">$15.60</h6>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center">$15.60</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-content">
-        <div class="row"> <!-- Adicionando a classe 'g-3' para espaçamento entre as colunas -->
-          <div class="linhaofproducts mx-auto p-2 mt-3">
-            <div class="col descritionsofcontent">
-              <img src="assets/gran-empresario-e1558299974907.png" class="img-contents mt-2 mb-2" alt="img-content1">
-              <h6>Name of product</h6>
-            </div>
-            <div class="col">
-              <div class="container borda gap-2 text-center">
-                <button class="button-diminuir">-</button>
-                <div class="valor-quantidade">1</div>
-                <button class="button-aumentar">+</button>
-              </div>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center ms-1">$15.60</h6>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center">$15.60</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-content">
-        <div class="row"> <!-- Adicionando a classe 'g-3' para espaçamento entre as colunas -->
-          <div class="linhaofproducts mx-auto p-2 mt-3">
-            <div class="col descritionsofcontent">
-              <img src="assets/gran-empresario-e1558299974907.png" class="img-contents mt-2 mb-2" alt="img-content1">
-              <h6>Name of product</h6>
-            </div>
-            <div class="col">
-              <div class="container borda gap-2 text-center">
-                <button class="button-diminuir">-</button>
-                <div class="valor-quantidade">1</div>
-                <button class="button-aumentar">+</button>
-              </div>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center ms-1">$15.60</h6>
-            </div>
-            <div class="col">
-              <h6 class="mt-2 text-center">$15.60</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="return-shop">
-                <button type="button" class="btn btn-primary mt- ">Primary</button>
-            </div> -->
+      <div class="carrinho"></div>
       <div class="ms-5 mb-5">
         <div class="cart-total mt-4">
           <div class="d-flex align-items-start gap-4">
@@ -220,6 +150,7 @@
       </div>
     </section>
   </main>
+  <script src="js/chekcout.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

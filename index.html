@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-  <section class="section1">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3">
+              <li class="nav-item text-start">
+                <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item text-start">
+                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
+              </li>
+              <li class="nav-item text-start">
+                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
+              </li>
+              <li class="nav-item text-start">
+                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
+              </li>
+            </ul>
+            <div class="position-relative">
+              <a href="Checkout.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+              <span class="translate-middle badge rounded-pill bg-danger msg-add">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="section1">
       <div class="div_pai">
         <div class="card_divpai">
           <img src="assets/download.png" class="img-div_pai" alt="...">
@@ -28,121 +74,126 @@
           </div>
         </div>
       </div>
-  </section>
-  <section class="section2 ">
-    
-    <div class="container">
-      <div>
-        <h2 class="mb-5">Special Menu for you</h2>
-      </div>
-      <div class="justify-content-center">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card card-content" >
-              <img src="assets/download.png" class="card-img-top card-img" alt="...">
-              <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p>Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-content" >
+    </section>
+    <section class="section2 ">
+      <div class="container">
+        <div>
+          <h2 class="mb-5">Special Menu for you</h2>
+        </div>
+        <div class="justify-content-center">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-content" data-id="1">
                 <img src="assets/download.png" class="card-img-top card-img" alt="...">
                 <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p class="card-text">Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-content" >
-              <img src="assets/download.png" class="card-img-top card-img" alt="...">
-              <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p class="card-text">Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Name of Product</h5>
+                  <p>Descrition of product</p>
+                  <p id="PrecoProduto">$50.50</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card card-content" >
-              <img src="assets/download.png" class="card-img-top card-img" alt="...">
-              <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p class="card-text">Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-content" >
-              <img src="assets/café.webp" class="card-img-top card-img" alt="...">
-              <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p class="card-text">Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+            <div class="col">
+              <div class="card card-content" data-id="2">
+                <img src="assets/download.png" class="card-img-top card-img" alt="...">
+                <div class="stars">
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Café</h5>
+                  <p class="card-text">Descrition of product</p>
+                  <p id="PrecoProduto">$30.10</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart" >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card card-content" >
-              <img src="assets/download.png" class="card-img-top card-img" alt="...">
-              <div class="stars">
-                <h5>4.8</h5>
-                <i class="fa-solid fa-star"></i>
+            <div class="col">
+              <div class="card card-content" data-id="3">
+                <img src="assets/download.png" class="card-img-top card-img" alt="...">
+                <div class="stars">
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Oi</h5>
+                  <p class="card-text">Descrition of product</p>
+                  <p id="PrecoProduto">$5</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
               </div>
-              <div class="card-body-items">
-                <h5>Name of Product</h5>
-                <p class="card-text">Descrition of product</p>
-                <a href="#" class="btn btn-primary mb-2">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+            </div>
+            <div class="col">
+              <div class="card card-content" data-id="4">
+                <img src="assets/download.png" class="card-img-top card-img" alt="...">
+                <div class="stars">
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Seasd</h5>
+                  <p class="card-text">Descrition of product</p>
+                  <p id="PrecoProduto">$50.50</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-content" data-id="5">
+                <img src="assets/café.webp" class="card-img-top card-img" alt="...">
+                <div class="stars">
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Beijo</h5>
+                  <p class="card-text">Descrition of product</p>
+                  <p id="PrecoProduto">$50.50</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart" >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-content" data-id="6">
+                <img src="assets/download.png" class="card-img-top card-img" alt="...">
+                <div class="stars">
+                  <h5>4.8</h5>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-body-items">
+                  <h5 id="NomeProduto">Name of Product</h5>
+                  <p class="card-text">Descrition of product</p>
+                  <p id="PrecoProduto">$50.50</p>
+                  <a href="#" class="btn btn-primary mb-2 add-to-cart">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section3 ">
-    <div class="textos ">
-      <h2>O que os clientes dizem</h2>
-    </div>
+    </section>
+    <section class="section3 ">
+      <div class="textos ">
+        <h2>O que os clientes dizem</h2>
+      </div>
       <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel">
-        
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -150,7 +201,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -162,7 +213,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -174,7 +225,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -186,7 +237,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -204,7 +255,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -216,7 +267,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -228,7 +279,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -240,7 +291,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -258,7 +309,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/gran-empresario-e1558299974907.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -270,7 +321,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -282,7 +333,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -294,7 +345,7 @@
                 <div class="col">
                   <div class="card feedback-card">
                     <div>
-                      <img src="assets/download.png" class="profile-img" alt="Profile Picture"> 
+                      <img src="assets/download.png" class="profile-img" alt="Profile Picture">
                     </div>
                     <div class="card-body">
                       <i class="fa-solid fa-quote-left aspas"></i>
@@ -306,18 +357,24 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-      </div>
-  </section>
+        </div>
+    </section>
+
+  </main>
+  <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
