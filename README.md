@@ -1,6 +1,35 @@
-Repositório criado para o projeto que os professores do Senac - São leopoldo passaram para nós estudantes. Onde o objetivo do projeto é produzir um e-commerce (Construção de uma Loja Virtual de Produtos) de produtos Extraordinários.
+### E-commerce de Produtos Extraordinários
 
-O projeto conta com um grupo de até tres pessoas. Porém, no meu grupo só tem dois integrantes.
+- Este é o repositório do projeto de um e-commerce de produtos extraordinários desenvolvido pelo Nicolas Ramos e Arthur Cardoso. O objetivo deste projeto é criar uma loja virtual para comercializar uma variedade de produtos únicos e extraordinários.
 
-Na primeira semana de produção deste e-commerce, focamos primeiramente na parte visual do nosso site, deixando todas as coisas mais faceis primeiro, para depois passarmos para a etapa lógica e funcional. 
-Ultilizamos as seguintes ferramentas: Figma, para produção do design do projeto, Link do figma: https://www.figma.com/design/VnKUdY13xIGri311ouB5eH/Untitled?node-id=0-1&t=xVDSCqOrqr4gNYCy-0 e Visual Studio Code para produzirmos os códigos do nosso projeto.
+### Descrição do Projeto
+- Nosso e-commerce é uma plataforma online onde os usuários podem navegar e comprar uma variedade de produtos extraordinários. Nós nos concentramos inicialmente na parte visual do site, utilizando a ferramenta Figma para criar o design do projeto. Você pode visualizar o design do projeto no seguinte link: Figma Design.
+
+### Ferramentas Utilizadas
+- Figma: Utilizamos o Figma para produzir o design visual do nosso projeto. Ele nos permitiu criar layouts e protótipos interativos para o nosso e-commerce.
+- Visual Studio Code: Utilizamos o Visual Studio Code como nosso ambiente de desenvolvimento para escrever e editar os códigos do projeto.
+- Tecnologias Utilizadas
+- O projeto é desenvolvido utilizando tecnologias web padrão, incluindo HTML, CSS e JavaScript para a parte front-end. Para a parte back-end, estamos utilizando
+
+## Armazenamento Local (LocalStorage)
+
+Utilizamos o LocalStorage para armazenar informações importantes do usuário, como produtos adicionados ao carrinho de compras e preferências de exibição. Isso nos permite fornecer uma experiência personalizada e persistente para os usuários, mesmo quando eles fecham o navegador ou atualizam a página.
+
+### Funcionalidades do LocalStorage
+
+- **Carrinho de Compras**: Os produtos adicionados ao carrinho de compras são armazenados no LocalStorage. Isso permite que os usuários continuem a navegar e a comprar produtos mesmo que saiam temporariamente do site ou atualizem a página.
+- **Preferências de Exibição**: As preferências de exibição dos usuários, como layout de página, tema e idioma, também são armazenadas no LocalStorage. Isso garante uma experiência consistente para os usuários sempre que eles retornam ao site.
+
+### Implementação
+
+- A manipulação do LocalStorage é feita principalmente através do JavaScript, utilizando os métodos `localStorage.setItem()`, `localStorage.getItem()` e `localStorage.removeItem()` para armazenar, recuperar e excluir dados, respectivamente. Cada vez que o carrinho de compras é atualizado ou as preferências de exibição são modificadas, os dados são atualizados no LocalStorage para refletir as alterações mais recentes.
+
+- Para garantir uma experiência suave e confiável, estamos constantemente validando e sincronizando os dados do LocalStorage com o estado atual do aplicativo, evitando inconsistências e erros.
+
+### Funcionalidades Implementadas
+- Nesta primeira semana de desenvolvimento, focamos na parte visual do site. Algumas das funcionalidades implementadas incluem:
+
+- Página inicial com destaque para os produtos em destaque.
+- Páginas individuais de produtos com informações detalhadas.
+- Páginas de categoria para navegação fácil entre os produtos.
+- Página de carrinho de compras para revisão e finalização das compras.

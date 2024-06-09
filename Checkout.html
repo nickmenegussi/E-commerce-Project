@@ -14,7 +14,7 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <a class="navbar-brand" href="#">GalacticMarket</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +29,7 @@
               <li class="nav-item text-start">
                 <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
+             
             </ul>
             <div class="position-relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-cart"
@@ -95,12 +87,17 @@
               <h6>Price</h6>
             </div>
             <div class="col text-center">
-              <h6>Subtotal</h6>
+              <h6>Total</h6>
+            </div>
+            <div class="col text-center">
+              <h6>Excluir</h6>
             </div>
           </div>
         </div>
       </div>
+  
       <div class="carrinho"></div>
+        
       <div class="ms-5 mb-5">
         <div class="cart-total mt-4">
           <div class="d-flex align-items-start gap-4">
@@ -120,13 +117,6 @@
                     </div>
                     <div class="col me-5">
                       <div class="d-flex justify-content-between">
-                        <p class="card-text">Subtotal:</p>
-                        <p>$1760</p>
-                      </div>
-                      <div class="segundalinha"></div>
-                    </div>
-                    <div class="col me-5">
-                      <div class="d-flex justify-content-between">
                         <p class="card-text">Frete:</p>
                         <p>Free</p>
                       </div>
@@ -135,11 +125,11 @@
                     <div class="col me-5">
                       <div class="d-flex justify-content-between">
                         <p class="card-text">Total:</p>
-                        <p>$1760</p>
+                        <p class="total-carrinho-final" onclick="atualizarTotalCarrinhoFinal();">$</p>
                       </div>
                     </div>
                     <div class="col me-5">
-                      <a href="#" class="btn btn-primary">Cadastre-se</a>
+                      <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,8 @@
 header {
     height: 6vh;
 }
+
+
 .titles {
     display: flex;
     align-items: center;

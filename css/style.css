@@ -3,11 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+html{
+    scroll-behavior: smooth;
+}
+
 .section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
+    margin-top: 5vh;
 }
 .card_divpai{
     margin-top: 5vh;
@@ -23,7 +30,7 @@ h3 {
 }
 .linha{
     width: 7.4vw;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .div_pai {
@@ -32,7 +39,7 @@ h3 {
     justify-content: center;
 }
 .img-div_pai{
-    width: 20vw;
+    width: 35vw;
     border-radius: 15px!important;
 
 }
@@ -43,7 +50,7 @@ h3 {
 .card-img {
     border-radius: 2vw!important;
     padding: 20px;
-    height: 25vh!important;
+    height: 50vh!important;
 }
 
 
@@ -127,4 +134,23 @@ h3 {
 .carousel-control-prev-icon:before,
 .carousel-control-next-icon:before {
   color: black; /* Cor do ícone dentro da bolinha */
+}
+
+
+.sessao-especiarias{
+    margin-top: 8vh;
+}
+
+
+.especiarias{
+    margin-top: 8vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.botao-compra{
+    width: 5vw !important;
 }

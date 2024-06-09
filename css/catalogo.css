@@ -43,6 +43,11 @@ header {
     height: 10vh;
     
 }
+
+body{
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+}
+
 .div-paioftheProduct {
     display: flex;
     align-items: center;

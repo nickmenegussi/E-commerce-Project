@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +14,7 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <a class="navbar-brand" href="#">GalacticMarket</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,17 +27,9 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3">
               <li class="nav-item text-start">
-                <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="#">Home</a>
+                <a class="nav-link active mx-lg-2 navbar-text" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
-              <li class="nav-item text-start">
-                <a class="nav-link mx-lg-2 navbar-text" href="#">Link</a>
-              </li>
+
             </ul>
             <div class="position-relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-cart"
@@ -54,7 +47,7 @@
   <main>
     <section>
       <div class="titles">
-        <h1>Carrinho</h1>
+        <h1>Estamos quase lá!</h1>
         <div class="container">
           <div class="row">
             <div class="col ms-5">
@@ -79,65 +72,31 @@
         </div>
       </div>
     </section>
-          <div class="linhaofcontentes mx-auto mt-5 mb-5">
-            <div class="row">
-              <div class="col ms-5">
-                <div class="card mx-auto" style="width: 23rem;">
-                  <div class="card-body">                    
-                    <div class="col me-5">
-                      <div class="d-flex justify-content-between align-items-center mb-4">
-                        <div class="d-flex align-items-center">
-                          <img src="assets/café.webp" alt="Imgproduct" style="width: 45px; height: 40px;">
-                          <p class="ms-2">Nome</p>
-                        </div>
-                        <p>$1760</p>
-                      </div>
-                    </div>
-                    <div class="col me-5">
-                      <div class="d-flex justify-content-between">
-                        <p class="card-text">Subtotal:</p>
-                        <p>$1760</p>
-                      </div>
-                      <div class="terceiralinha"></div>
-                    </div>
-                    <div class="col me-5">
-                      <div class="d-flex justify-content-between">
-                        <p class="card-text">Frete:</p>
-                        <p>Free</p>
-                      </div>
-                      <div class="terceiralinha"></div>
-                    </div>
-                    <div class="col me-5">
-                      <div class="d-flex justify-content-between">
-                        <p class="card-text">Total:</p>
-                        <p>$1760</p>
-                      </div>
-                    </div>
-                    <div class="row pagamento-compra">
-                      <div class="col-6">
-                        <label class="form-check-label">
-                          <input type="radio" name="payment" value="cash-on-delivery"> Banco</label>
-                      </div>
-                      <div class="col-6 mb-3">
-                        <label class="form-check-label">
-                          <input type="radio" name="payment" value="cash-on-delivery"> Cash on Delivery
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col me-5">
-                      <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                    <!-- Opções de pagamento -->
-
-                  </div>
-                </div>
-              </div>
+    <div class="linhaofcontentes mx-auto mt-5 mb-5">
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Parabéns!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <p>Você acaba de finalizar sua compra na GalactiMarket!</p>
+              <p>Nós enviaremos um e-mail com a confirmação do seu pedido!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
     </section>
-    
-    
   </main>
+  <script src="js/payment.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
